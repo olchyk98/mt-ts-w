@@ -1,0 +1,30 @@
+{
+  "name": "mt-ts-w",
+  "private": true,
+  "version": "1.0.0",
+  "author": "Oles Odynets",
+  "license": "MIT",
+  "scripts": {
+    "build": "esbuild main.ts --platform=node --target=node12 --external:jsdom --bundle --sourcemap --outfile=dist/index.js",
+    "prebuild": "yarn",
+    "start": "yarn build && node --enable-source-maps dist",
+    "prestart": "yarn",
+    "typecheck": "tsc --noEmit --project tsconfig.json"
+  },
+  "dependencies": {
+    "bluebird": "latest",
+    "ramda": "latest",
+    "typescript": "latest"
+  },
+  "devDependencies": {
+    "@mediatool/eslint-config-mediatool": "latest",
+    "@types/bluebird": "latest",
+    "@types/node": "latest",
+    "@types/ramda": "latest",
+    "@typescript-eslint/eslint-plugin": "latest",
+    "esbuild": "latest",
+    "eslint": "latest",
+    "ts-node": "latest",
+    "typescript": "latest"
+  }
+}
