@@ -6,5 +6,5 @@ export const firstWords = 'HelloWorld'
 * or replace "typeof firstWords" within
 * parentheses with a type.
 * */
-type HoverOverMe = (typeof firstWords)
+export type HoverOverMe = (typeof firstWords)
 // --- CHECK YOUR TYPE ---
